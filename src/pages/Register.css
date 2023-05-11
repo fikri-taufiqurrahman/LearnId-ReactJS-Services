@@ -1,0 +1,18 @@
+.register {
+    background: linear-gradient(#B1B2FF, #D2DAFF);
+    padding-top: 7.5%;
+}
+
+img {
+    width: 25%;
+}
+
+.right {
+    float: right;
+    width: 70%;
+}
+
+.left {
+    width: auto;
+    height: auto;
+}

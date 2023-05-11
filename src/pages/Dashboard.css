@@ -1,0 +1,31 @@
+.dashboard {
+    background: linear-gradient(#AAC4FF, #B1B2FF);
+    height: 100vh;
+}
+
+.dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid #B1B2FF;
+    border-radius: 10px;
+    background-color: linear-gradient(#AAC4FF, #B1B2FF);
+    opacity: 0.8;
+    color: white;
+    margin: 20px;
+    transition-duration: 0.3s;
+}
+
+.dashboard-menu h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.dashboard-menu:hover {
+    background-color: #B1B2FF;
+    opacity: 1;
+}

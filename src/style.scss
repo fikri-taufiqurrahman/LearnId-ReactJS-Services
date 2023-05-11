@@ -1,0 +1,83 @@
+$primary-color: #B1B2FF; // tambahkan variabel untuk warna primary baru
+.form-control {
+    display: inline-block;
+    color: $primary-color;
+    font-size: 16px;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-text-fill-color: $primary-color;
+        /* warna teks */
+        -webkit-box-shadow: 0 0 0 30px #fff inset;
+        /* warna lapisan dalam */
+        transition: background-color 5000s ease-in-out 0s, font-size 300ms ease-out 0s;
+        /* disable autofill background color change */
+        transition-delay: 100ms;
+        /* tambahan properti transition-delay */
+        font-size: 16px;
+    }
+    &::placeholder,
+    &:focus,
+    &:valid,
+    &:enabled {
+        color: $primary-color;
+        opacity: 1;
+    }
+}
+
+.card {
+    background-color: #AAC4FF;
+    color: #EEF1FF;
+    width: 150vh;
+    height: 70vh;
+}
+
+.text-muted {
+    color: #EEF1FF !important;
+}
+
+.btn-primary {
+    // tambahkan styling untuk Button variant primary
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+    }
+}
+
+// definisikan variabel warna untuk alert
+$alert-color: #B1B2FF;
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $alert-color;
+    border-color: $alert-color;
+    color: white;
+    height: 25px;
+    font-size: 16px;
+    a {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.navbar {
+    background-color: #AAC4FF !important;
+}
+
+.btn-outline-light {
+    &:hover,
+    &:visited,
+    &:active,
+    &:link {
+        background-color: transparent;
+        border-color: #fff;
+        color: white;
+    }
+}
